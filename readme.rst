@@ -1,71 +1,159 @@
-###################
-What is Retargeting
-###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+<div align="center">
 
-*******************
-Release Information
-*******************
+[<img src="./public/button-buy-me-a-coffee.png" width="150" alt="Buy me a coffee button"/>](https://www.buymeacoffee.com/afadil)
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+</div>
 
-**************************
-Changelog and New Features
-**************************
+# Wealthfolio
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+## Overview
 
-*******************
-Server Requirements
-*******************
+**Wealthfolio App** is a Beautiful and Boring Investment Tracker, with Local Data Storage. No
+Subscriptions, No Cloud.
 
-PHP version 5.6 or newer is recommended.
+Visit the app website at [Wealthfolio App](https://wealthfolio.app/).
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+![Screenshot](public/screenshot.png)
 
-************
-Installation
-************
+## Roadmap
+- [ ] Export Data
+- [ ] Support Options
+- [ ] Support Bonds
+- [ ] Monte-Carlo Portfolio Projection
+- [ ] CSV Import Profile by Account
+- [ ] Mobile App with Database File Sync
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+## Getting Started
 
-*******
-License
-*******
+### Prerequisites
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+Ensure you have the following installed on your machine:
 
-*********
-Resources
-*********
+- [Node.js](https://nodejs.org/)
+- [pnpm](https://pnpm.io/)
+- [Rust](https://www.rust-lang.org/)
+- [Tauri](https://tauri.app/)
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+### Installation
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+1. **Clone the repository**:
 
-***************
-Acknowledgement
-***************
+   ```bash
+   git clone https://github.com/afadil/wealthfolio.git
+   cd wealthfolio
+   ```
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+2. **Install dependencies using pnpm**:
+
+   ```bash
+   pnpm install
+   ```
+
+### Running the Application
+
+- **Development Mode**:
+
+  Build and run the desktop application using Tauri:
+
+  ```bash
+  pnpm tauri dev
+  ```
+
+- **Build for Production**:
+
+  Build the application for production:
+
+  ```bash
+  pnpm tauri build
+  ```
+
+## Technologies Used
+
+### Frontend
+
+- **React**: JavaScript library for building user interfaces.
+- **React Router**: Declarative routing for React.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Radix UI/Shadcn**: Accessible UI components.
+- **Recharts**: Charting library built with React.
+
+### Backend / APIs
+
+- **React Query**: Data-fetching library for React.
+- **Zod**: TypeScript-first schema declaration and validation library.
+
+### Development Tools
+
+- **Vite**: Next-generation frontend tooling.
+- **TypeScript**: Typed superset of JavaScript.
+- **ESLint**: Pluggable linting utility for JavaScript and JSX.
+- **Prettier**: Code formatter.
+- **Tauri**: Framework for building tiny, secure, and fast desktop applications.
+
+## Folder Structure
+
+```
+wealthfolio/
+├── .github/
+│   └── workflows/
+│       └── release.yml
+├── public/
+├── src/
+│   ├── assets/
+│   ├── commands/
+│   ├── components/
+│   ├── lib/
+│   ├── pages/
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── routes.tsx
+│   ├── styles.css
+│   ├── useGlobalEventListener.ts
+│   └── vite-env.d.ts
+├── src-tauri/
+│   ├── icons/
+│   ├── migrations/
+│   ├── src/
+│   ├── target/
+│   ├── .gitignore
+│   ├── build.rs
+│   ├── Cargo.lock
+│   ├── Cargo.toml
+│   ├── diesel.toml
+│   ├── tauri.conf.json
+├── .env
+├── .eslintrc.cjs
+├── .gitignore
+├── .prettierrc.cjs
+├── components.json
+├── index.html
+├── package.json
+├── pnpm-lock.yaml
+├── postcss.config.js
+├── README.md
+├── tailwind.config.js
+├── tsconfig.json
+└── vite.config.ts
+```
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
+
+## License
+
+This project is licensed under the LGPL-3.0 license. See the `LICENSE` file for details.
+
+## 🌟 Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=afadil/wealthfolio&type=Timeline)](https://star-history.com/#afadil/wealthfolio&Date)
+---
+
+Enjoy managing your wealth with **Wealthfolio**! 🚀
