@@ -1,46 +1,33 @@
-###################
-What is Retargeting
-###################
+# **KTP Data Extractor**
 
-Retargeting sendiri merupakan sebuah pola yang banyak digunakan dalam dunia e-commerce, yang bertujuan untuk memasarkan barang atau produk kepada pelanggan yang telah menunjukkan indikasi ketertarikan namun belum melakukan proses pembelian. Strategi ini memanfaatkan data dan perilaku pengunjung yang sebelumnya telah berinteraksi dengan situs atau aplikasi, seperti mengunjungi halaman produk tertentu, menambahkan barang ke keranjang belanja, atau bahkan menghabiskan waktu di situs tanpa menyelesaikan transaksi. Dengan pendekatan ini, e-commerce dapat secara efektif mengingatkan dan menarik kembali perhatian pelanggan, mendorong mereka untuk melanjutkan proses pembelian yang sebelumnya terhenti, dan pada akhirnya meningkatkan konversi serta penjualan secara keseluruhan.
+## 🚀 Project Overview
 
-*******************
-The Goal
-*******************
+The **KTP Data Extractor** is an advanced machine learning-powered application that extracts critical information from **Indonesian KTP (Kartu Tanda Penduduk)** images. Using object detection, segmentation, and document parsing technology, the application efficiently detects the KTP area, crops it, and reads the text fields.
 
-Menerapkan Sistem Retargeting Untuk toko OFFLINE
+By utilizing **YOLO for object detection**, **Oriented Bounding Boxes (OBB)**, and **Donut🍩 models**, this app provides a complete solution for extracting and processing structured KTP data with high accuracy.
 
-**************************
-Prequisite
-**************************
+---
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+## ✨ Features
 
-*******************
-Instalation
-*******************
+- **Automatic KTP Detection**: Detects KTP area from an image, even when it’s not perfectly aligned.
+- **Oriented Bounding Box (OBB) Detection**: Accurately determines the orientation and corners of the KTP in the image.
+- **Document Parsing with Donut🍩 Model**: Extracts text information (NIK, gender, and religion) from the KTP image.
+- **Streamlit Web Interface**: Intuitive and user-friendly web interface for uploading KTP images and viewing extracted data in real-time.
+- **GPU Support**: Supports GPU acceleration for fast inference on large datasets.
 
-PHP version 5.6 or newer is recommended.
+---
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+## 🧠 Technologies Used
 
-************
-Installation
-************
+- **YOLOv8**: For oriented bounding box object detection and segmentation of the KTP area.
+- **Donut🍩 (VisionEncoderDecoderModel)**: Document understanding transformer, is a new method of document understanding that utilizes an -free end-to-end Transformer model.
+- **OpenCV**: For image processing and transformation.
+- **Streamlit**: To build the interactive web-based user interface.
+- **PyTorch**: For running and handling deep learning models.
 
-1. **Clone repository:**
+---
 
-Gunakan perintah berikut untuk meng-clone proyek:
-
-```bash
-
-
-```bash
-git clone https://github.com/username/Batola-Retargeting-System-Skripsi.git
-```
 ## 🔧 Installation and Setup
 
 ### Prerequisites
@@ -184,30 +171,3 @@ For any questions or issues, feel free to reach out:
 - **Name**: Fahrul Firmansyah
 - **Email**: ffirmansyah3576@gmail.com
 - **LinkedIn**: [Fahrul Firmansyah](https://www.linkedin.com/in/fahrul-firmansyah-5a1b34237)
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
