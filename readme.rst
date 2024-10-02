@@ -36,7 +36,11 @@ Installation
 Gunakan perintah berikut untuk meng-clone proyek:
 
 ```bash
-git clone https://github.com/username/nama-proyek.git
+
+
+```bash
+git clone https://github.com/username/Batola-Retargeting-System-Skripsi.git
+```
 
 *******
 License
