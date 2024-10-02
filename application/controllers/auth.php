@@ -44,9 +44,12 @@ class auth extends CI_Controller
                     'level' => $akun['level'],
 
                 ];
-
                 $this->session->set_userdata($data);
-                redirect("user");
+                if ($akun['level'] == 1) {
+                    $this->template->load('user/template', 'user/V_user');
+                } else {
+                    redirect('barang');
+                }
             } else {
 
                 echo "salah password";

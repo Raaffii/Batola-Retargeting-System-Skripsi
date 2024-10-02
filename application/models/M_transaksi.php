@@ -7,7 +7,8 @@ class M_transaksi extends CI_Model
             'id_barang' => $id_barang
 
         );
-        return $this->db->insert('tb_transaksi', $data);
+        $query = $this->db->insert('tb_transaksi', $data);
+        return $query;
     }
     public function input_pelanggan($id)
     {
@@ -28,9 +29,6 @@ class M_transaksi extends CI_Model
         $this->db->set('status', 1);
         return   $this->db->update('tb_transaksi');;
     }
-
-
-
 
     public function ambildata()
     {

@@ -7,4 +7,8 @@ class M_customer extends CI_Model
         $query = $this->db->get('tb_pelanggan');
         return $query->result();
     }
+    public function inputCustomer($data)
+    {
+        $this->db->insert('tb_pelanggan', $data);
+    }
 }

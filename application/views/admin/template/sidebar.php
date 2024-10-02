@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse  w-auto  max-height-vh-100" id="sidenav-collapse-main">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link text-white active active" href="<?= base_url("user") ?>">
+                <a class="nav-link text-white active bg-gradient-primary" href="<?= base_url("user") ?>">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">dashboard</i>
                     </div>
@@ -18,7 +18,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white active " href="<?= base_url("user/rekomendasi") ?>">
+                <a id="link" class="nav-link text-white" href="" onclick="ubahKelas()">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">table_view</i>
                     </div>
@@ -34,43 +34,19 @@
                 </a>
             </li>
 
-
-            <li class="nav-item mt-3">
-                <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Account pages</h6>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white " href="./pages/profile.html">
-                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="material-icons opacity-10">person</i>
-                    </div>
-                    <span class="nav-link-text ms-1">Profile</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white " href="./pages/sign-in.html">
-                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="material-icons opacity-10">login</i>
-                    </div>
-                    <span class="nav-link-text ms-1">Sign In</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white " href="./pages/sign-up.html">
-                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="material-icons opacity-10">assignment</i>
-                    </div>
-                    <span class="nav-link-text ms-1">Sign Up</span>
-                </a>
-            </li>
         </ul>
     </div>
+
+
+
     <script>
-        const activePage = window.location.href;
-        const navLinks = document.querySelectorAll('li a').
-        forEach(link => {
-            if (link.href.includes('${activaPage}')) {
-                console.log('${activePage}')
-            }
-        })
+        function ubahKelas() {
+            // Mengambil elemen dengan ID "link"
+            var tautan = document.getElementById('link');
+
+            // Mengubah kelas elemen
+            tautan.classList.remove('nav-link text-white');
+            tautan.classList.add('nav-link text-white active bg-gradient-primary');
+        }
     </script>
 </aside>

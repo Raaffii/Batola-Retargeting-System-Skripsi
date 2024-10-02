@@ -40,8 +40,8 @@ class user extends CI_Controller
     public function masukan_customer_ongo()
     {
         $id = $this->input->post('id_pelanggan');
-        $this->M_transaksi->input_pelanggan($id);
-        redirect('user/pembelian');
+        $insert = $this->M_transaksi->input_pelanggan($id);
+        echo json_encode($insert);
     }
 
     public function konfirmasibeli()
@@ -81,7 +81,7 @@ class user extends CI_Controller
 
         $output2 = '  <form action="">
         <div>
-            <h6 class="text-center mb-0" id="customer_show">tidak terdaftar</h6>
+            <h6 class="text-center mb-0" id="customer_show">tidak terdasftar</h6>
             <button><i class="fa-solid fa-plus"></i></button>
         </div>
         </form>';
@@ -122,7 +122,7 @@ class user extends CI_Controller
                     <input type="hidden" value="' . $lm->id_barang . ' " name="id_barang">
                     <button class=" border-0  bg-gray-100 border-radius-lg">Input</button>
                     </form>
-                     </td>
+                            </td>
 
                 </tr>
             </tbody>
@@ -145,11 +145,10 @@ class user extends CI_Controller
     public function masukan_keranjang()
     {
         $barang = $this->input->post("id_barang");
-        $this->M_transaksi->input_transaksi($barang);
-        redirect('user/pembelian');
+        $insert = $this->M_transaksi->input_transaksi($barang);
+        echo json_encode($insert);
+        //redirect('user/pembelian');
     }
-
-
 
     public function cari()
     {

@@ -1,7 +1,5 @@
 <?php $this->load->view('user/template/header'); ?>
 
-
-
 <?php $this->load->view('user/template/sidebar'); ?>
 
 
@@ -10,7 +8,4 @@
     <?php $this->load->view('user/template/navbar'); ?>
     <?php echo $contents; ?>
 </main>
-
-
-
 <?php $this->load->view('user/template/footer'); ?>
