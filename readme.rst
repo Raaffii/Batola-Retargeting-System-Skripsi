@@ -31,6 +31,8 @@ issues, as well as missing features.
 Installation
 ************
 
+1. **Clone repository:**
+
    Gunakan perintah berikut untuk meng-clone proyek:
 
    ```bash
