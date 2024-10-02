@@ -1,0 +1,8 @@
+python D:\Rafidata\UPN_JT\Level_8\sukses\xampp_start\xampp.py
+
+@echo off
+set FLASK_APP=batolaflask.py
+flask run
+
+
+
