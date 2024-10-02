@@ -33,10 +33,10 @@ Installation
 
 1. **Clone repository:**
 
-   Gunakan perintah berikut untuk meng-clone proyek:
+Gunakan perintah berikut untuk meng-clone proyek:
 
-   ```bash
-   git clone https://github.com/username/nama-proyek.git
+```bash
+git clone https://github.com/username/nama-proyek.git
 
 *******
 License
