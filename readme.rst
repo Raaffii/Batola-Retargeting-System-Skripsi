@@ -5,22 +5,20 @@ What is Retargeting
 Retargeting sendiri merupakan sebuah pola yang banyak digunakan dalam dunia e-commerce, yang bertujuan untuk memasarkan barang atau produk kepada pelanggan yang telah menunjukkan indikasi ketertarikan namun belum melakukan proses pembelian. Strategi ini memanfaatkan data dan perilaku pengunjung yang sebelumnya telah berinteraksi dengan situs atau aplikasi, seperti mengunjungi halaman produk tertentu, menambahkan barang ke keranjang belanja, atau bahkan menghabiskan waktu di situs tanpa menyelesaikan transaksi. Dengan pendekatan ini, e-commerce dapat secara efektif mengingatkan dan menarik kembali perhatian pelanggan, mendorong mereka untuk melanjutkan proses pembelian yang sebelumnya terhenti, dan pada akhirnya meningkatkan konversi serta penjualan secara keseluruhan.
 
 *******************
-Release Information
+The Goal
 *******************
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+Menerapkan Sistem Retargeting Untuk toko OFFLINE
 
 **************************
-Changelog and New Features
+Prequisite
 **************************
 
 You can find a list of all changes for each release in the `user
 guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
 
 *******************
-Server Requirements
+Instalation
 *******************
 
 PHP version 5.6 or newer is recommended.
@@ -33,8 +31,10 @@ issues, as well as missing features.
 Installation
 ************
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+   Gunakan perintah berikut untuk meng-clone proyek:
+
+   ```bash
+   git clone https://github.com/username/nama-proyek.git
 
 *******
 License
